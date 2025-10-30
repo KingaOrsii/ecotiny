@@ -308,7 +308,7 @@ ul {
         transform: translate(0, -50%);
         width: 13px;
         height: 13px;
-        background-image: url('../icons/arrow.svg');
+        background-image: url('./icons/arrow.svg');
     }
 
 /****************************/
@@ -668,23 +668,23 @@ ul {
             height: 470px;
         }
             .gallery__image--first::before {
-                background-image: url('../images/img-utanfuto.webp');
+                background-image: url('./images/img-utanfuto.webp');
             }
 
             .gallery__image--second::before {
-                background-image: url('../images/img-fabolkeszult.webp');
+                background-image: url('./images/img-fabolkeszult.webp');
             }
 
             .gallery__image--third::before {
-                background-image: url('../images/img-negyevszakos.webp');
+                background-image: url('./images/img-negyevszakos.webp');
             }
 
             .gallery__image--fourth::before {
-                background-image: url('../images/img-futottpadlo.webp');
+                background-image: url('./images/img-futottpadlo.webp');
             }
 
             .gallery__image--fifth::before {
-                background-image: url('../images/img-furdoszoba.webp');
+                background-image: url('./images/img-furdoszoba.webp');
             }
 
 /* ISMERD MEG */
@@ -709,7 +709,7 @@ ul {
         height: 100%;
     }
         .get-to-know .parallax__image::before {
-            background-image: url('../images/img-ismerdmeg.webp');
+            background-image: url('./images/img-ismerdmeg.webp');
         }
 
 .get-to-know .title__holder {
@@ -945,7 +945,7 @@ section.partners {
     width: 100%;
 }
     .did-you-know .parallax__image::before {
-        background-image: url('../images/img-tudtad.webp');
+        background-image: url('./images/img-tudtad.webp');
     }
 
     .did-you-know .section__content {
@@ -972,7 +972,7 @@ section.partners {
 /* Form section */
 
 .form-section {
-    background: url('../images/img-form.webp') no-repeat center center;
+    background: url('./images/img-form.webp') no-repeat center center;
     padding: 80px 0 100px;
 }
 
@@ -1012,7 +1012,7 @@ section.partners {
         top: 0;
         width: 24px;
         height: 24px;
-        background-image: url('../icons/arrow-link.svg');
+        background-image: url('./icons/arrow-link.svg');
     }
 
     .route-to__link:hover {
