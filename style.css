@@ -1155,6 +1155,10 @@ section.partners {
 }
 
 @media (max-width: 1440px) {
+    .hero__background-holder {
+        flex-direction: column;
+    }
+
     .wrapper:not(.wrapper--small) {
         margin: 0 3%;
     }
