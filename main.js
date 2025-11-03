@@ -17,7 +17,11 @@ function initParallax() {
             // Check if item is in viewport
             if (rect.bottom >= 0 && rect.top <= windowHeight) {
                 // Simple parallax calculation relative to viewport center
-                const speed = 0.15; // Much slower parallax speed
+                // set the speed based on the screen width
+                let speed = 0.15;
+                if (window.innerWidth < 1440) {
+                    speed = 0.09;
+                }
                 const viewportCenter = scrollTop + (windowHeight / 2);
                 const itemCenter = itemTop + (itemHeight / 2);
                 const distance = viewportCenter - itemCenter;
@@ -75,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeSwiper(document.querySelector('.lg-slider'), 1.4, 1, 30, {
         320: {
             slidesPerView: 1.4,
+            spaceBetween: 15
         },
         640: {
             slidesPerView: 1.3,
@@ -84,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
             slidesPerView: 2,
         },
         1280: {
-            slidesPerView: 1.3,
+            slidesPerView: 2.2,
         },
         1440: {
             slidesPerView: 1.3,
@@ -110,10 +115,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Text slider
-    initializeSwiper('.text-slider', 'auto', 1, 30, {}, true, '#fff', false, false);
+    initializeSwiper('.text-slider', 'auto', 1, 30, {
+        320: {
+            spaceBetween: 15
+        },
+    }, true, '#fff', false, false);
 
     // Featured slider
-    initializeSwiper('.featured-slider', 'auto', 1, 30, {}, true, '#7AC942', false, false);
+    initializeSwiper('.featured-slider', 'auto', 1, 30, {
+        320: {
+            spaceBetween: 15
+        },
+    }, true, '#7AC942', false, false);
     
 });
 

@@ -726,7 +726,7 @@
         <section class="partners" role="region" aria-label="<?php echo __('Partnereink') ?>">
             <div class="wrapper">
                 <div class="w-50">
-                    <h1 class="section__title"><?php echo __('Partnereink') ?></h1>
+                    <h2 class="section__title"><?php echo __('Partnereink') ?></h2>
                     <p class="text"><?php echo __('Curabitur etiam adipiscing placerat quam nam. Volutpat ultricies neque auctor nulla purus mauris et. Viverra in diam elementum eget sit suscipit egestas molestie pellentesque. Tellus massa feugiat egestas integer et mattis donec.') ?></p>
                 </div>
                 <div class="partners__grid">
@@ -833,29 +833,90 @@
                         <div class="swiper-slide card">
                             <h3 class="carousel__title">04</h3>
                             <div class="text-slider__content">
-                                <h4 class="title-30"> <?php echo __('Megrendeled a házat') ?></h4>
+                                <h4 class="title-30"> <?php echo __('Gyártási sorszámot kapsz') ?></h4>
                                 <p class="text text--dark pt-20">
-                                    <?php echo __('Kitöltöd a megrendelő űrlapot – ez még semmilyen kötelezettséggel nem jár, csak elindítja a folyamatot.') ?>
+                                    <?php echo __('Ezzel biztosítjuk a helyed a gyártási sorban, és elkezdjük az előkészületeket.') ?>
                                 </p>
                             </div>
                         </div>
                         <div class="swiper-slide card">
                             <h3 class="carousel__title">05</h3>
                             <div class="text-slider__content">
-                                <h4 class="title-30"> <?php echo __('Beszélünk veled, hogy tényleg neked való legyen') ?></h4>
+                                <h4 class="title-30"> <?php echo __('Először csak az első részletet kérjük') ?></h4>
                                 <p class="text text--dark pt-20">
-                                    <?php echo __('Tapasztalt kollégánk felveszi veled a kapcsolatot, hogy pontosítsuk az igényeidet, megnézzük, milyen felszereltség lenne számodra ideális, és megbeszéljük a részleteket. A finanszírozás is') ?>
-                                    <strong><?php echo __('személyre szabott') ?></strong>
-                                    <?php echo __(', igazodik a gyártási ütemhez és a te lehetőségeidhez is.') ?>
+                                    <?php echo __('Mielőtt indulna a gyártás, egyeztetünk, és bekérjük az első részletet – ebből fedezzük az anyagköltségek egy részét.') ?>
                                 </p>
                             </div>
                         </div>
                         <div class="swiper-slide card">
                             <h3 class="carousel__title">06</h3>
                             <div class="text-slider__content">
-                                <h4 class="title-30"> <?php echo __('Szerződünk – tisztán, átláthatóan') ?></h4>
+                                <h4 class="title-30"> <?php echo __('Elindul az építés') ?></h4>
                                 <p class="text text--dark pt-20">
-                                    <?php echo __('Ha minden kérdésedre választ kaptál, megkötjük a szerződést, benne a gyártási határidőkkel, a műszaki tartalommal és a részletekben történő fizetési ütemezéssel.') ?>
+                                    <?php echo __('A gyártás szakaszokban történik, mindenről értesítünk:') ?>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p class="text text--dark">
+                                            <?php echo __('Először elkészül az egyedi utánfutó') ?>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text text--dark">
+                                            <?php echo __('Ezután megépítjük a szerkezetet és felkerül a külső burkolat') ?>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text text--dark">
+                                            <?php echo __('Jönnek a vezetékek, kábelek, szigetelések') ?>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text text--dark">
+                                            <?php echo __('Ezután a belső burkolás, terek kialakítása') ?>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text text--dark">
+                                            <?php echo __('Végül beépítjük a gépeket, bútorokat, kapcsolókat, lámpákat és minden részletet a helyére teszünk') ?>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h3 class="carousel__title">07</h3>
+                            <div class="text-slider__content">
+                                <h4 class="title-30"> <?php echo __('Folyamatosan képben leszel') ?></h4>
+                                <p class="text text--dark pt-20">
+                                    <?php echo __('Nem hagyunk bizonytalanságban – minden fontosabb lépésnél jelentkezünk, így mindig tudod, hol tart a házad.') ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h3 class="carousel__title">08</h3>
+                            <div class="text-slider__content">
+                                <h4 class="title-30"> <?php echo __('Átadás: te hozod, vagy mi visszük') ?></h4>
+                                <p class="text text--dark pt-20">
+                                    <?php echo __('Ha elkészült a ház, eldöntheted, hogy te szállítod el, vagy mi visszük ki a megadott címre.') ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h3 class="carousel__title">09</h3>
+                            <div class="text-slider__content">
+                                <h4 class="title-30"> <?php echo __('Átveszed a házad, indul a garancia') ?></h4>
+                                <p class="text text--dark pt-20">
+                                    <?php echo __('Az utolsó részletet csak ekkor kérjük be, amikor a ház készen áll az átvételre.') ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h3 class="carousel__title">10</h3>
+                            <div class="text-slider__content">
+                                <h4 class="title-30"> <?php echo __('Utána sem tűnünk el') ?></h4>
+                                <p class="text text--dark pt-20">
+                                    <?php echo __('Kérdésed van? Módosítanál valamit később? Akkor is számíthatsz ránk, ha már letelt a garanciaidő.') ?>
                                 </p>
                             </div>
                         </div>

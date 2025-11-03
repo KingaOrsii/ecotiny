@@ -453,6 +453,8 @@ ul {
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
     .hero__background-holder:after {
         content: "";
@@ -615,7 +617,7 @@ ul {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
-        padding-bottom: 110px;
+        padding: 50px 0 110px;
     }
 
         .technical-details__item {
@@ -670,7 +672,7 @@ ul {
         }
 
         .gallery__image {
-            height: 470px;
+            aspect-ratio: 4 / 2.5;
         }
             .gallery__image--first::before {
                 background-image: url('./images/img-utanfuto.webp');
@@ -748,6 +750,10 @@ ul {
     .price {
         padding-bottom: 20px;
     }
+
+.button__holder--mobile {
+    display: none;
+}
 
 .vertical-accordion {
     display: flex;
@@ -853,6 +859,7 @@ ul {
 
         .vertical-accordion__content .swiper-slide img {
             min-width: 100%;
+            max-width: 100%;
         }
 
         .vertical-accordion__content .swiper-pagination {
@@ -1130,7 +1137,7 @@ section.partners {
 @media (max-width: 1920px) {
 
     .text-slider {
-        height: 550px;
+        height: 650px;
     }
 
     .did-you-know .content__right {
@@ -1168,10 +1175,6 @@ section.partners {
 
     .data__grid {
         grid-gap: 60px;
-    }
-
-    .gallery__image {
-        height: 350px;
     }
 }
 
@@ -1258,10 +1261,6 @@ section.partners {
         right: 30px;
     }
 
-    .button__holder--mobile {
-        display: none;
-    }
-
     .vertical-accordion__item.selected {
         min-width: 750px;
     }
@@ -1286,15 +1285,21 @@ section.partners {
         grid-template-columns: 1fr;
     }
 
+        .did-you-know .content__right {
+            width: 50%;
+            margin-left: auto;
+            margin-top: -140px;
+            padding-left: 30px;
+        }
+
     .did-you-know {
         padding: 140px 0;
     }
 
     .did-you-know .parallax__image {
-        height: 600px;
-        width: 50%;
-        margin-left: auto;
-        margin-top: -130px;
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 2 / 3;
     }
 
     .locations__holder {
@@ -1319,12 +1324,15 @@ section.partners {
         }
 
     .featured .swiper-pagination-prev,
-    .featured .swiper-pagination-next {
+    .featured .swiper-pagination-next,
+    .pre-ordering .swiper-pagination-prev,
+    .pre-ordering .swiper-pagination-next {
         width: 36px;
     }
 
-    .featured .swiper-pagination {
-        top: -110px;
+    .featured .swiper-pagination,
+    .pre-ordering .swiper-pagination {
+        top: -100px;
     }
 
     .data__grid {
@@ -1334,7 +1342,7 @@ section.partners {
 
 @media (max-width: 1024px) {
     .technical__image {
-        width: 480px;
+        width: 80%;
     }
 
     .why-a-tiny-house .content__left .text {
@@ -1353,10 +1361,16 @@ section.partners {
         grid-column-start: 1;
     }
 
+        .icon-grid__item {
+            padding-bottom: 25px;
+        }
+
     .technical-details__content {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding-top: 30px;
+        max-width: 60%;
     }
 
         .technical-details__item {
@@ -1397,11 +1411,6 @@ section.partners {
         padding: 100px 0;
     }
 
-    .did-you-know .parallax__image {
-        height: 400px;
-        margin-top: -170px;
-    }
-
     .form-section .section__content {
         grid-template-columns: 1fr;
     }
@@ -1422,7 +1431,7 @@ section.partners {
         }
 
     .wrapper--small {
-        margin: 0 5%;
+        margin: 0 10%;
     }
 
     .why-a-tiny-house .content__right {
@@ -1433,6 +1442,7 @@ section.partners {
     
     .vertical-accordion {
         flex-direction: column;
+        overflow: hidden;
     }
 
     .vertical-accordion__item {
@@ -1473,6 +1483,12 @@ section.partners {
     }
 }
 
+@media (max-width: 800px) {
+    .technical-details__content {
+        max-width: 80%;
+    }
+}
+
 @media (max-width: 640px) {
     .main-title {
         font-size: 56px;
@@ -1492,6 +1508,8 @@ section.partners {
 
     .technical-details__content {
         justify-content: flex-start;
+        padding-top: 20px;
+        max-width: 100%;
     }
 
     .technical-details__item {
@@ -1553,11 +1571,6 @@ section.partners {
         height: 156px;
     }
 
-    .did-you-know .parallax__image {
-        height: 300px;
-        margin-top: -130px;
-    }
-
     .content__right .swiper-slide {
         max-width: 260px !important;
         height: 340px;
@@ -1591,17 +1604,45 @@ section.partners {
         padding-top: 0;
     }
 
-    .gallery__image {
-        height: 300px;
+    .icon-item__holder img {
+        max-width: 100%;
+    }
+
+    .hero .title-30 {
+        flex-direction: column;
+    }
+
+    .featured,
+    .faq {
+        padding: 80px 0;
+    }
+
+    .vertical-accordion__item:before,
+    .vertical-accordion__item:after {
+        height: 20px;
+        width: 3px;
+        top: 45px;
+    }
+
+    .faq__question {
+        font-size: 24px;
+    }
+
+    .data {
+        font-size: 30px;
+    }
+
+    .data__stats {
+        padding-bottom: 20px;
+    }
+
+    .did-you-know .content__right {
+        margin-top: -110px;
+        padding-left: 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .did-you-know .parallax__image {
-        height: 300px;
-        margin-top: -170px;
-    }
-
     .locations__holder {
         grid-template-columns: 1fr;
     }
@@ -1640,11 +1681,12 @@ section.partners {
     }
 
     .carousel__title {
-        padding-bottom: 25px;
+        padding-bottom: 20px;
+        line-height: 1;
     }
 
     .text-slider {
-        height: 500px;
+        height: 600px;
     }
 
     .hero__content {
@@ -1655,11 +1697,11 @@ section.partners {
         margin-bottom: 10vh;
     }
 
-    .gallery__image {
-        height: 200px;
-    }
-
     .gallery__item .caption {
         bottom: -50px;
+    }
+
+     .did-you-know .content__right {
+        margin-top: -130px;
     }
 }
